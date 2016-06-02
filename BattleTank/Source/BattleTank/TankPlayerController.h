@@ -18,4 +18,6 @@ public:
 		ATank* GetControllerTank() const;
 	
 		virtual void BeginPlay() override;
+		virtual void Tick(float DeltaSeconds) override;
+		void AimTowardsCosshair();
 };
